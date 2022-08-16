@@ -51,11 +51,15 @@ public class FruitOrder {
   }
 
   public double calcAppleCost(int numOfApples) {
-    return (numOfApples)*(0.60);
+    int extra = numOfApples % 2;
+    int dividedApples = (Math.round((numOfApples / 2)));
+    return (extra + dividedApples) * (0.60);
   }
   
   public double calcOrangeCost(int numOfOranges) {
-    return (numOfOranges)*(0.25);
+    int extra = numOfOranges % 3;
+    int dividedOranges = (Math.round((numOfOranges / 3))) * 2;
+    return (extra + dividedOranges) * (0.25);
   }
   
   public double calcTotalCost() {

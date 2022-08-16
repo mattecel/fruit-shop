@@ -41,25 +41,25 @@ class FruitShopApplicationTests {
 
 	@Test
 	void testAppleCost() {
-		double expectedCost = 6.0;
+		double expectedCost = 3.0;
 		assertEquals(expectedCost, od.calcAppleCost(10));
-		expectedCost = 12.0;
+		expectedCost = 6.0;
 		assertEquals(expectedCost, od.calcAppleCost(20));
 	}
 
 	@Test
 	void testOrangeCost() {
-		double expectedCost = 2.5;
+		double expectedCost = 1.75;
 		assertEquals(expectedCost, od.calcOrangeCost(10));
-		expectedCost = 5;
+		expectedCost = 3.5;
 		assertEquals(expectedCost, od.calcOrangeCost(20));
-		expectedCost = 1.25;
+		expectedCost = 1.0;
 		assertEquals(expectedCost, od.calcOrangeCost(5));
 	}
 
 	@Test
 	void testCombinedCost() {
-		double expectedCost = 11;
+		double expectedCost = 6.5;
 		assertEquals(expectedCost, od.calcTotalCost());
 	}
 
